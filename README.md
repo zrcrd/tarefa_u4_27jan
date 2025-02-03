@@ -59,6 +59,7 @@ O repositório contém os arquivos e pastas: tarefa_27jan.'c' CMakeList. 'txt' d
 Ao clonar dentro do VS Code será criado o arquivo build.
 
 🤝 Contribuições
+
 Contribuições e sugestões são bem vindas.
 
 📄 Licença
