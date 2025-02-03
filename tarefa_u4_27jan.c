@@ -1,4 +1,5 @@
-//
+//ze ricardo/
+
 #include <stdio.h> // Padrão da linguagem C
 #include "pico/stdlib.h" //Padrão do raspberry pi pico
 #include "hardware/pio.h"
