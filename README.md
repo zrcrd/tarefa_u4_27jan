@@ -57,6 +57,7 @@ Execute o projeto e interaja com os botões para verificar as funcionalidades.
 O repositório contém os arquivos e pastas: tarefa_27jan.'c' CMakeList. 'txt' diagram. 'json' pico_sdk_import. 'cmake' ws2818b.pio. 'h' diagram. 'json' wokwi. 'toml' README. 'MD' . 'gitignore' . 'VSCODE'
 
 Ao clonar dentro do VS Code será criado o arquivo build.
+
 🤝 Contribuições
 Contribuições e sugestões são bem vindas.
 
