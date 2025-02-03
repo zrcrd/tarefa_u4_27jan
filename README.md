@@ -1,5 +1,4 @@
 # josericardo-tarefa-27jan
-tarefa-27jan
 tarefa do dia 27 de janeiro.
 
 Atividade avaliativa proposta pelo Cepedi como parte dos critérios de avaliação do curso de capacitação em software e sistemas embarcados (Embarcatech).
@@ -59,7 +58,7 @@ O repositório contém os arquivos e pastas: tarefa_27jan.'c' CMakeList. 'txt' d
 
 Ao clonar dentro do VS Code será criado o arquivo build.
 🤝 Contribuições
-Sinta-se à vontade para contribuir com melhorias e sugestões!
+Contribuições e sugestões são bem vindas.
 
 📄 Licença
 Este projeto está licenciado sob a MIT License.
