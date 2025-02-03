@@ -1,4 +1,4 @@
-//ze ricardo/
+//José Ricardo
 
 #include <stdio.h> // Padrão da linguagem C
 #include "pico/stdlib.h" //Padrão do raspberry pi pico
@@ -21,7 +21,7 @@ int EVENTOS = 10; // Número de eventos para alternar entre os botões
 int estado_atual = 0; // Estado atual do sistema que será incrementado ou decrementado.
 
 //Mínimo de temo entre interrupções para debouncing
-#define DEBOUNCE_DELAY 250 // Milissegundos
+#define DEBOUNCE_DELAY 251 // Milissegundos
 
 // Variáveis que controlam o debouncing
 volatile uint32_t last_irq_time_A = 0;
