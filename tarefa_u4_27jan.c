@@ -1,10 +1,10 @@
-//Bibliotecas utilizadas
+//
 #include <stdio.h> // Padrão da linguagem C
 #include "pico/stdlib.h" //Padrão do raspberry pi pico
 #include "hardware/pio.h"
 #include "ws2818b.pio.h" //Utilizada para configuração da matriz de leds
 
-// Definindo os pinos dos componentes
+// Definindo os pinos de cada componentes
 #define MATRIZ_WS2818 7  // Pino de NP_CTLRL da matriz de LEDs
 #define LEDS_TOTAL 25    // Número total de LEDs na matriz
 #define BOTAO_A 5      // Pino do Botão A
@@ -13,16 +13,16 @@
 #define PIN_GREEN 11         // Pino do LED verde
 #define PIN_RED 13         // Pino do LED vermelho
 
-//Variável para controlar o 50 em porcentagem
+//Variável que controla o 50 em porcentagem
 //uint8_t (8 bits <=> 256 valores)
 
 int EVENTOS = 10; // Número de eventos para alternar entre os botões
 int estado_atual = 0; // Estado atual do sistema que será incrementado ou decrementado.
 
-// Tempo mínimo entre interrupções para debouncing
+//Mínimo de temo entre interrupções para debouncing
 #define DEBOUNCE_DELAY 250 // Milissegundos
 
-// Variáveis para controlar o debouncing
+// Variáveis que controlam o debouncing
 volatile uint32_t last_irq_time_A = 0;
 volatile uint32_t last_irq_time_B = 0;
 
@@ -36,7 +36,7 @@ int getIndex(int x, int y) {
     }
 }
 
-//Inicializar os pinos do led RGB
+//Inicializção dos pinos do led RGB
 void RGB_INIT() {
   //Inicializa
   gpio_init(PIN_RED);
@@ -48,7 +48,7 @@ void RGB_INIT() {
   gpio_set_dir(PIN_BLUE, GPIO_OUT);
 }
 
-// Função para acionar leds RGB e configurar o tempo ligado
+// Função que acionam leds RGB e configurar o tempo ligado
 void LEDS_ESTATIC(bool r, bool g, bool b, int tempo) {
  RGB_INIT(); //Chamando a função RGB_INIT
  gpio_put(PIN_RED, r);
